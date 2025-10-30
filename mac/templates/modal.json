@@ -1,0 +1,78 @@
+{
+    "type": "modal",
+    "callback_id": "test_modal",
+    "title": {
+        "type": "plain_text",
+        "text": "자동화 테스트 실행"
+    },
+    "blocks": [
+        {
+            "type": "section",
+            "block_id": "platform_section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "실행할 플랫폼을 선택해주세요."
+            },
+            "accessory": {
+                "type": "static_select",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "플랫폼"
+                },
+                "options": [
+                    {
+                        "text": {
+                            "type": "plain_text",
+                            "text": "Android"
+                        },
+                        "value": "android"
+                    },
+                    {
+                        "text": {
+                            "type": "plain_text",
+                            "text": "iOS"
+                        },
+                        "value": "ios"
+                    }
+                ],
+                "action_id": "platform_select"
+            }
+        },
+        {
+            "type": "input",
+            "block_id": "device_input",
+            "label": {
+                "type": "plain_text",
+                "text": "실행할 가상 기기"
+            },
+            "element": {
+                "type": "plain_text_input",
+                "action_id": "device_input"
+            }
+        },
+        {
+            "type": "input",
+            "block_id": "username_input",
+            "label": {
+                "type": "plain_text",
+                "text": "아이디"
+            },
+            "element": {
+                "type": "plain_text_input",
+                "action_id": "username_input"
+            }
+        },
+        {
+            "type": "input",
+            "block_id": "password_input",
+            "label": {
+                "type": "plain_text",
+                "text": "비밀번호"
+            },
+            "element": {
+                "type": "plain_text_input",
+                "action_id": "password_input"
+            }
+        }
+    ]
+}
